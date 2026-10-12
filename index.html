@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f6fb">
+  <title>My First Web Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="My First Project home">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span>My First Project</span>
+    </a>
+    <button id="themeButton" class="theme-button" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+      <span class="theme-label">Dark mode</span>
+    </button>
+  </header>
+
+  <main id="home" class="page-content">
+    <section class="welcome-card" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow">A LITTLE BIT OF HTML, CSS &amp; JS</p>
+        <h1 id="welcome-title">Hello, web!</h1>
+        <p class="intro">A small space to try things, learn as you go, and make the web your own.</p>
+      </div>
+      <div class="greeting-panel">
+        <label for="visitorName">What should I call you?</label>
+        <div class="greeting-controls">
+          <input id="visitorName" type="text" placeholder="Type your name" autocomplete="given-name" maxlength="40">
+          <button id="greetButton" class="primary-button" type="button">Say hello <span aria-hidden="true">→</span></button>
+        </div>
+        <p id="greeting" class="result" aria-live="polite">Your greeting will appear here.</p>
+      </div>
+    </section>
+
+    <section class="planner-card" aria-labelledby="tasks-title">
+      <div class="planner-heading">
+        <div>
+          <p class="eyebrow">YOUR SPACE</p>
+          <h2 id="tasks-title">Study planner</h2>
+        </div>
+        <span class="planner-icon" aria-hidden="true">✦</span>
+      </div>
+      <p class="planner-description">Keep your next task in sight and take it one step at a time.</p>
+      <ul id="taskList" class="task-list">
+        <li><span class="task-dot" aria-hidden="true"></span><span>Choose one thing to learn today</span></li>
+      </ul>
+    </section>
+    <footer class="page-footer">Made for curious minds <span aria-hidden="true">✦</span></footer>
+  </main>
+</body>
+</html>
